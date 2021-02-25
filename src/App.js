@@ -94,10 +94,7 @@ class App extends React.Component {
         render: (_, record) =>
           this.state.dataSource.length >= 1 ? (
             <div>
-              <img
-                src="/delete-32.png" // eslint-disable-next-line 
-                onClick={() => this.handleDelete(record.key)}
-              ></img>
+              <img src="/delete-32.png" alt="delete" onClick={() => this.handleDelete(record.key)}></img>
             </div>
           ) : null,
       },
