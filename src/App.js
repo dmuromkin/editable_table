@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect, useRef } from "react";
 import "antd/dist/antd.css";
 import "./App.css";
 import { Table, Input, Button, Form } from "antd";
+import Map from "./MyMap"
 const EditableContext = React.createContext(null);
 
 const EditableRow = ({ index, ...props }) => {
@@ -248,6 +249,7 @@ class App extends React.Component {
     });
     return (
       <div>
+        <Map/>
         <Button
           onClick={this.handleAdd}
           type="primary"
